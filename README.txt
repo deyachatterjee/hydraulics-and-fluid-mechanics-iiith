@@ -81,3 +81,8 @@ Go to Command Terminal
 
 * Now, open ui/build/index.html in the browser to test the template.
 
+------------------------------------------------
+
+SRIP Channels Experiment:
+Codes and related files are in src/lab/exp9/SRIP folder in branch: srip2019
+
