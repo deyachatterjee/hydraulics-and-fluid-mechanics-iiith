@@ -1,1 +1,87 @@
 
+<!-- Channels Experiment (Experiment #9) to determine the coefficient of discharge (COD) of a broadcrested weir-->
+
+<html>
+<head>
+	<title>Channels Experiment</title>
+   <!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"-->
+   <link rel="stylesheet" type="text/css" href="style.css">
+  <!--script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script-->
+</head>
+ 
+ <body>
+<!--canvas id = "io" width = "1000" height = "250" style=" border:10px solid #483d8b ;">This is Canvas</canvas-->
+	<script src = "exp9.js">   </script>
+
+<div class="container">
+
+
+<!-- buttons in the top part -->
+<!--image sources not yet added for the buttons-->
+	<div class="white_color"> 
+	<button class="btn" name="graph">	Full View Graph		</button>
+    <button class="btn" name="restart"  onclick="start()">		Restart	</button>
+	<button class="btn" name="start"  onclick="window.location='experiment.html';">	Start 	</button>  <!--add Stop here only-->
+	<!--onclick=start()-->
+	
+		
+	<button class="btn" name="next">		Next	</button>
+	</div>
+	
+	<!--input type="button" value="Reset" onClick="document.location.reload(true) "> <!--id = child2"-->
+	<script src = "exp9.js"> </script>
+
+	<script src = "animation.js"></script>
+    
+<p style="text-align:justify"><h2>                                          Channels Test</h2></p>
+	<!--button  type = "button" onclick =  "animations()" id = 'child1' >Start</button-->  
+    <canvas id = "exp" width = "800" height = "650" style=" border:10px solid #483d8b ;">This is Canvas</canvas>
+
+    <div class="grey_color">
+		*Start the experiment.
+	</div>
+	<!-- buttons in the bottom part -->
+<!--image sources not yet added for the buttons-->
+
+<div class="white_color"> 
+	<button class="btn" name="hori">	Horizontal View		</button>
+	<button class="btn" name="vert" >		Vertical View	</button>
+	
+	<!--button class="btn" name="restart"  onclick="start()">		Restart	</button-->
+	<input type="checkbox" name="ip"><span >Change Input Parameters </span></input>
+	<!--button class="btn" name="next">		Next	</button-->
+	
+	<input type="checkbox" name="graph_show"><span >Show Graphs </span></input>
+	</div>
+
+<form name = "calculation" ><!--id = "Div"-->
+
+<!--label style = "color: blue; font: bold;">H (cm):</label> 
+<input type="number" name ="Height" id = "ht" style = "position:absolute; top:0; left: 120">
+
+<label style = "position:absolute; top:0; left: 500; color: blue">Q_a:</label> 
+<input type="text" name="q_a" style = "position:absolute; top:0; left: 550"><br><br>
+
+<labe style = "color: blue; font: bold;">Da (cm):</label> 
+<input type="number" name="D1"  style = "position:absolute; top:35; left: 120">
+
+<label  style = "position:absolute; top:50; left: 500">Q_th:</label>
+<input type="text" name="q_th"  style = "position:absolute; top:50; left: 550"><br><br>
+
+<label style = "color: blue; font: bold;">Db (cm):</label> 
+<input type="number" name="D2"  style = "position:absolute; top:70; left: 120">
+
+<label style = "position:absolute; top:100; left: 500">C_d:</label> 
+<input type="text" name="c_d"  style = "position:absolute; top:100; left: 550"><br><br>
+
+<label style = "color: blue; font: bold;">Time (sec):</label> 
+<input type="number" name="Time"  style = "position:absolute; top:105; left: 120"><br><br>
+
+<input type="button" onClick="Results()" value="Calculate" style = "position:absolute; top:160; left: 350"-->
+</form>
+
+<script src = "calculations.js"></script>
+	
+</body>
+</html>
