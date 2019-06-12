@@ -1,1 +1,104 @@
 
+@import url('https://fonts.googleapis.com/css?family=Questrial&display=swap');
+
+.body {
+	background-color: #D5F5E3;
+	
+}
+
+.main-heading {
+    text-align: center;
+    font-size: 30px;
+ 	font-family: 'Questrial', sans-serif;
+	color: #023141;
+	margin-left: 52px; 
+
+}
+
+.start {
+	background-color: #023141;
+	color: #fff;
+	font-family: 'Questrial', sans-serif;
+	display: inline-block;
+	width: 90px;
+	padding: 10px;
+	margin: 10px auto;
+	cursor: pointer;
+	text-align: center;
+	font-size: 15px;	
+	margin-left: 520px;
+	margin-right: 10px;
+	opacity: 0.8;
+
+	
+}
+.start:hover {
+	opacity: 1;
+}
+
+.reset {
+	background-color: #023141;
+	color: #fff;
+	font-family: 'Questrial', sans-serif;
+	display: inline-block;
+	width: 90px;
+	padding: 10px;
+	margin: 10px auto;
+	cursor: pointer;
+	text-align: center;
+	font-size: 15px;
+	opacity: 0.8;
+	
+}
+.reset:hover {
+	opacity: 1;
+}
+
+
+/* The popup form - hidden by default */
+.form-popup {
+  	display: none;
+	position: fixed;
+	top: 80px;
+	bottom: 20px;
+	right: 30px;
+	border: 3px solid #f1f1f1;
+	z-index: 9;
+	
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=number] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+ .tank-left {
+         width: 177px;
+         background-color: #00B0EA;
+         height: 0px;
+         position: absolute;
+         left: 229px;
+         top: 586px;
+
+        }
+
+ .tank-right {
+         width: 177px;
+         background-color: #00B0EA;
+         height: 0px;
+         position: absolute;
+         left: 719px;
+         top: 586px;
+
+        }
