@@ -29,7 +29,21 @@ var sluice_gate=draw.polyline([[690,200],[710,220],[710,450],[890,450],[890,220]
 var hjump_notch=draw.polyline([[690,200],[710,220],[710,450],[890,450],[890,220],[910,200]]).fill('none').stroke ({ 
     	width: 3
 	});
+var duct1=draw.polyline([[690,200],[710,220],[710,450],[890,450],[890,220],[910,200]]).fill('none').stroke ({ 
+    	width: 3
+	});
+duct1.animate(4600,'',2500).size(307,23)
+	
+duct2 = draw.polygon([[401,404],[401,433],[401.1,401]]).attr ({ 
+		'fill': '#00B0EA'
+	});
+duct3 = draw.polygon([[650.5,401],[652.1,400],[652.1,406.5]]).attr ({
+		'fill':'#00B0EA'
+	});
 
+duct2.animate(1000,'',2500).size(70,21.5);
+duct3.animate(920,'',6210).size(57.8,23.3);
+	
 }
 
 window.onload=function() {
