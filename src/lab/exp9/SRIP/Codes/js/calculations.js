@@ -7,6 +7,24 @@ function getAvgVel() {
 	var n_val=document.getElementById('n').value;
     return Number(Math.pow(rad,(2/3))*Math.pow(s,(1/2))) / n_val;
 }
+
+function get_b_value()
+{
+	var big_h_val = document.getElementById('height').value; //whole water height H
+	var small_h_val = document.getElementById('el_height').value; //element height h
+	 var theta = document.getElementById('angle').value;
+	//var s_val = document.getElementById('s').value;
+	return 2*(big_h_val-small_h_val)*Math.tan(theta/2);
+}
+
+
+
+function get_el_area()  //hatched element area delA
+{
+ var del_area = calculate_area_sg();  //.value?
+	var del_h = document.getElementById('delta_h').value;
+	return get_b_value.value*del_h;
+}
 //sluice gate
 function calculate_area_sg() {
     var area;
@@ -18,6 +36,14 @@ function calculate_area_sg() {
     } catch (error) {
         throw error;
     }
+}
+
+const den = 1 / 10; // converting 10 mm to cm
+const g = 914; //gravity
+
+function discharge_vel()
+{
+return Math.sqrt(2*g*den);
 }
 //actual discharge Qa
 function calculate_Qa() {
@@ -33,8 +59,13 @@ function calculate_Qa() {
 
 }
 
-const den = 1 / 10; // converting 10 mm to cm
-const g = 914; //gravity
+function cal_q()
+{
+var cod_val = Number(document.getElementById('cod').value);
+var theta = document.getElementById('angle').value;
+	var big_h_val = document.getElementById('height').value; //whole water height H
+	return Math.tan(theta/2)*(8/15)*cod_val*Math.sqrt(2*g)*Math.pow(big_h_val,(5/2);
+}
 
 //force exerted on the jet
 function force_jet() {
