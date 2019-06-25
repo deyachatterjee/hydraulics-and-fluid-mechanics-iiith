@@ -57,6 +57,52 @@
 
 <form name = "calculation" ><!--id = "Div"-->
 
+	 <!-- CALCULATIONS SECTION-->
+	  
+    <div class = "container-fluid calculations">
+		
+      <div class="form-class" id="myForm">
+        <h2><b>Calculations</b></h2>
+        <form class="form-container">
+          <div class = "row">
+			  
+            <div class = "col-md-3">
+              <label for="area"><b>Area of sluice gate:</b></label>
+              <input type="number" placeholder="in square centimter (Reading 1)" class ="form-control form-rounded" id="area" required>
+              <input type="number" placeholder="in cubic centimter (Reading 2)" class ="form-control form-rounded"  id="volume2" required>
+            </div>
+			  
+           
+			  
+            <div class = "col-md-3">
+              <label for="vel"><b>Velocity:</b></label>
+              <input type="number" placeholder="in units (Reading 1)" class ="form-control form-rounded" id="vel" required>
+              //<input type="number" placeholder="in units (Reading 2)" class ="form-control form-rounded" id="pressure2" required>
+            </div>
+			  
+          </div>
+			
+          <div class = "row">
+			  
+            <div class = "col-md-4"></div>
+            <div class = "col-md-4">	
+              <button type="button" class="btn" id="result"><b>CALCULATE!</b></button>
+              <button type="reset" class="btn clear-btn" id = "clear-btn"><b>CLEAR</b></button>
+            </div>
+			  
+          </div>
+          <br>
+			
+          <!-- GRAPH -->
+			
+          <div class = "row">
+            <div class = "col-md-3"></div>
+            <div class = "col-md-6">
+              <div id="chartContainer" style="height: 300px; width: 89%;"></div>
+		    plotgraph(vh1, vh2, ph1, ph2, th1, th2);
+		   
+	  
+  
 <!--label style = "color: blue; font: bold;">H (cm):</label> 
 <input type="number" name ="Height" id = "ht" style = "position:absolute; top:0; left: 120">
 
