@@ -94,3 +94,30 @@ function displayResult() {
     }
 }
 */
+function calculate()
+	{
+	if (velocity == null || area == null, discharge == null || diameter == null) {
+    alert("All inputs are not filled. Please check!");
+    return false;
+  }
+
+  try {
+ 
+    if (velocity <= 0 || area <= 0 || discharge < 0 || diameter < 0) {
+      throw ("Invalid input(s).");
+    }
+
+    else {
+
+      get_avg_vel();
+      get_b_val();
+    }
+
+    //    plotGraph(velocityHead, velocityHead2, pressureHead, pressureHead2, totalHead, totalHead2);
+      //  alert("Average Total Head is " + avgTotalHead + " cm");
+
+  catch (e) {
+    alert("Error: " + e);
+  }
+}
+	}
