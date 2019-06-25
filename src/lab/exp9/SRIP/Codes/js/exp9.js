@@ -21,7 +21,40 @@ resetButton.onclick = function() {
 
 function core_exp()
 {
+var tankLeft = DRAW.polyline([
+    [200, 200],
+    [220, 220],
+    [220, 450],
+    [400, 450],
+    [400, 220],
+    [420, 200]
+  ]).fill('none').stroke({
+    width: 3,
+  })
 
+  var incomingPipe = DRAW.polyline([
+    [300, 250],
+    [300, 150],
+    [150, 150],
+    [150, 170],
+    [280, 170],
+    [280, 250]
+  ]).fill('none').stroke({
+    width: 3
+  })
+
+
+  var ductLower = DRAW.polygon([
+    [400, 425],
+    [460, 405],
+    [650, 405],
+    [710, 425],
+    [710, 380],
+    [400, 380]
+  ]).fill('none').stroke({
+    width: 3,
+
+  })
 var sluice_gate=draw.polyline([[690,200],[710,220],[710,450],[890,450],[890,220],[910,200]]).fill('none').stroke ({ 
     	width: 3
 	});
