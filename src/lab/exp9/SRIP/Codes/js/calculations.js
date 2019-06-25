@@ -81,6 +81,43 @@ function force_jet() {
     }
     
 }
+	
+	//graphs
+	 function plotGraph(vh1, vh2, ph1, ph2, th1, th2) {
+  var chart = new CanvasJS.Chart("chartContainer", {
+
+
+    title: {
+
+      text: "",
+
+
+    },
+    axisY: [{
+        title: "",
+       // lineColor: "#C24642",
+       // tickColor: "#C24642",
+       // labelFontColor: "#C24642",
+       // titleFontColor: "#C24642",
+
+      },
+      {
+        title: "",
+        //lineColor: "#369EAD",
+       // tickColor: "#369EAD",
+      //  labelFontColor: "#369EAD",
+       // titleFontColor: "#369EAD"
+
+      }
+    ],
+
+    toolTip: {
+            </div>
+          </div>
+        </form>
+      </div>
+		
+    </div>
 
 /*
 function displayResult() {
