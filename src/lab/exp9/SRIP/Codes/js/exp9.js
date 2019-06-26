@@ -77,6 +77,76 @@ duct3 = draw.polygon([[650.5,401],[652.1,400],[652.1,406.5]]).attr ({
 duct2.animate(1000,'',2500).size(70,21.5);
 duct3.animate(920,'',6210).size(57.8,23.3);
 	
+<canvas id="canvas" width="640" height="480"></canvas>
+
+var c = document.getElementById("myCanvas");
+var cursor = c.getContext("2d");
+var tank =c.getContext("2d");
+
+var cylinder =c.getContext("2d"); cylinder.save();
+cylinder.beginPath();
+drawCylinder(cylinder ,300,250,70,25);
+cylinder.fillStyle="black";  cylinder.fill();
+cylinder.beginPath();
+cylinder.rect(200,150,70,25); 
+cylinder.fillStyle= "brown";  cylinder.fill();
+drawCylinder(cylinder ,300,250,70,25);
+cylinder.restore();
+cursor.save();
+cursor.moveTo(20,70);
+cursor.lineTo(350,90);
+cursor.stroke();
+cursor.restore();
+
+cursor.save();
+cursor.moveTo(150,30);
+cursor.lineTo(180,30);
+cursor.stroke();
+cursor.restore();
+
+cursor.save();
+cursor.moveTo(170,60);
+cursor.lineTo(170,130);
+cursor.stroke();
+cursor.restore();
+cursor.save();
+cursor.moveTo(68,70);
+cursor.lineTo(430,85);
+cursor.stroke();
+cursor.restore();
+var rct = c.getContext("2d");
+tank.save();
+tank.beginPath();
+tank.rect(68, 70, 15, 90);//side
+tank.fillStyle = "#cae2e7";
+tank.fill();
+tank.restore();
+
+cursor.rotate(1* Math.PI / 180);
+cursor.beginPath();
+cursor.rect(160,50, 25,5);
+cursor.fillStyle = "red"; 
+cursor.fill();
+
+var tank = c.getContext("2d");
+tank.save();
+tank.rotate(2* Math.PI / 180);
+tank.beginPath();
+tank.rect(33,100, 400, 62);//water
+tank.fillStyle = "blue";
+tank.fill();
+tank.restore();
+var front=c.getContext("2d");
+front.save();
+front.rotate(-5* Math.PI / 180);
+front.beginPath();
+front.rect(200,150,70,25);
+front.fillStyle ="black";
+front.fill();
+front.restore();  front.save();
+
+	
+	
 }
 
 window.onload=function() {
